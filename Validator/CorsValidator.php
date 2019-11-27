@@ -64,7 +64,15 @@ class CorsValidator implements CorsValidatorInterface
      */
     public function originIsValid(): bool
     {
+
         if ($this->request instanceof HttpRequest) {
+            //Allow Chrome Extensions
+            preg_match('/Origin: chrome-extension:/',$this->request,$matches);
+            if ($matches)
+            {
+                return true;
+            }
+
             //Validate that we're working with something that cares about CORS
             if (!$this->request->getHeader('Origin')) {
                 return false;
