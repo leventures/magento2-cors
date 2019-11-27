@@ -1,10 +1,14 @@
 {
-    "name": "graycore/magento2-cors",
+    "name": "leventures/magento2-cors",
     "description": "A Magento 2 module that enables CORS on the GraphQL and REST Apis",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "authors": [
+        {
+          "name": "Le Ventures",
+          "email": "dev@leventures.com"
+        },
         {
             "name": "Damien Retzinger",
             "email": "damienwebdev@gmail.com"
