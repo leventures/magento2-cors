@@ -20,7 +20,7 @@ This module is intended to be installed with [composer](https://getcomposer.org/
 
 1. Download the package
 ```bash
-composer require graycore/magento2-cors
+composer require leventures/magento2-cors
 ```
 2. [Configure the package](/docs/stories/configuring-the-headers.md)
 3. Enable the package
